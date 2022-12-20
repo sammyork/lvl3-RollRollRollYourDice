@@ -19,8 +19,6 @@ function rollDice() {
         array.push(thisRoll);
         allRows.push(array[i].reduce((a, b) => a + b, 0));
     }
-    console.log(array);
-    console.log(allRows);
     for (var num = numDice*1; num <= numDice*6; num ++) {
         var newRow = frequencyTable.insertRow();
         var newCell = newRow.insertCell();
